@@ -14,7 +14,7 @@ Admin = "Admin"
 Navigation = "Navigation"
 Oxygen = "Oxygen"
 Electrical ="Electrical"
-# And some variables. You may need to add some more here.
+# And some variables.
 gamerunning=True
 door_open = False
 location = ROOM_START
@@ -36,7 +36,7 @@ Impostor={
     'Impostorlocation':'Engine',
     'Impostor':True
 }
-#Used these from class example
+
 def can_taser_Impostor(player,Impostor):
     if player['location']==Impostor['Impostorlocation']:
         if player['taser']==True:
@@ -54,7 +54,7 @@ def can_win_game(autopilot,Impostor):
         if Impostor==False:
             return True
     return False
-#end of class example
+
 # Start by printing the first room description.
 print(START_DESC)
 
